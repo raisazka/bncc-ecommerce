@@ -1,0 +1,249 @@
+
+body, html {
+  	font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+  }
+
+
+/*navbar*/
+
+.navbar{
+	background-color: white;
+	margin-bottom: 0px;
+	box-shadow: 0 3px 20px -1px grey;
+
+}
+
+.navbar-brand img{
+	max-width:120px;
+	margin-top: -6px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+@media(max-width: 770px){
+	.navbar-brand img{
+		max-height: 35px;
+	}
+}
+
+
+
+.navbar-nav li a:hover {
+	background-color: transparent;
+	font-style: italic;
+	transition-duration: 1s;
+}
+.btn-go:hover{
+	background-color: #0e1c36;
+	color: white;
+}
+
+.form-search{
+	background-color: #bfd7ea;
+	border: 0px;
+	padding: 6px;
+	padding-right: 25px;
+	color : black;
+	margin-top: 9px;
+	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+
+.btn{
+	background-color: #ff5a5f;
+	border:0px;
+	padding: 6px;
+	padding-left: 12px;
+	padding-right: 10px;
+	border-radius: 0px;
+	margin-top: 9px;
+	color: white;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.navbar-right{
+	margin-right: 20px;
+}
+
+
+/*content*/
+main{
+	padding-bottom: 10px;
+}
+
+.sidenav {
+    width: 200px;
+    position: static;
+    margin-right: 30px;
+    margin-top: 30px;
+    z-index: 1;
+    background:#ff5a5f;
+    padding: 0px 0;
+}
+
+.sidenav a{
+    padding: 10px 8px 10px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+		background:#0e1c36;
+		color: white;	
+	}
+
+@media screen and (max-width: 1200px) {
+	.sidenav{
+		margin-left:15px;
+	}
+}
+
+
+.content{
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+
+.GambarProduk img{
+	height: 150px;
+	width: 100%;
+  	object-fit: cover;
+}
+#MyWishlistid{
+	padding: 10px 8px 10px 25px;
+	background:#ff5a5f;
+	color: white;
+}
+
+.IsiWishlist{
+	padding: 20px 0px 20px 10px;
+	position: static;
+	height: 200px;
+}
+
+.keterangan_produk{
+	font-size: 15px;
+	height: 150px;
+	overflow-y: scroll;
+
+}
+
+
+.HargaBarang{
+	font-size: 18px;
+}
+
+#NamaProduk{
+	font-size: 18	px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#orderBtn {
+	font-size: 20px;
+   	background-color: white;
+    border: 1px solid black;
+    color:black;
+    padding:0px 10px;
+    cursor: pointer;
+ 	right: 0px;
+ 	margin-left: 30px;
+}
+
+#orderBtn:hover{
+	background-color:#0e1c36;
+	color: white;
+}
+.space{
+	height: 20px;
+	width: 100%;
+}
+
+/*footer*/
+.footer{
+   position: fixed bottom;
+   width: 100%;
+   color: white;
+   background-color: #0e1c36;
+	margin-top: 290px;
+}
+.social-media{
+	max-width:30px;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 15px;
+}
+
+.footerPart2{
+	padding-top: 13px;
+}
+
+.footerPart3{
+	padding-top: 20px;
+	padding-left: 5px; 
+	padding-right : 5px;
+	padding-bottom: 5px;
+}
+
+.footerPart3 a{
+	color: white;
+	font-style: none;
+
+}
+
+.footerPart3 p{
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+
+.vl {
+    border-left: 1px solid white;
+    margin: 20px 0px 20px 0px;
+    height: 160px;
+}
+
+.vl2 {
+    border-right: 1px solid white;
+    margin: 20px 0px 20px 0px;
+    height: 160px;
+}
+
+
+@media screen and (max-width: 650px) {
+
+	.footer{
+		height: 35%;
+	}
+
+	.footerPart1{
+		width: 250px;
+	}
+	.footerText{
+		position: sticky;
+	}
+	.footerPart2{
+		display: none;
+	}
+
+
+	.footerPart3{
+		margin-top: 0px;
+		margin-left: -20px;
+		width: 400px;
+	}
+
+	.footer .col-xs-1, .col-sm-1, .col-md-1, .scol-lg-1{
+		display: none;
+	}
+
+}
